@@ -1,0 +1,14 @@
+version: '2'
+services:
+  marvinmao-admin:
+    image: marvinmao/admin
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.profiles.active=dev
+  marvinmao-api:
+    image: marvinmao/api
+    ports:
+      - "8081:8081"
+    environment:
+      - spring.profiles.active=dev
